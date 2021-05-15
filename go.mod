@@ -1,3 +1,5 @@
-module github.com/maja42/go-utils
+module github.com/maja42/gotils
 
 go 1.16
+
+require github.com/stretchr/testify v1.7.0
