@@ -23,7 +23,7 @@ type SignalHandler struct {
 func NewSignalHandler(logger mlog.Logger) *SignalHandler {
 	return &SignalHandler{
 		Signals:             []os.Signal{syscall.SIGINT, syscall.SIGTERM},
-		MaxShutdownDuration: 10 * time.Second,
+		MaxShutdownDuration: 5 * time.Second,
 		ExitFunc:            os.Exit,
 		Logger:              logger.New("sig-handler"),
 	}
